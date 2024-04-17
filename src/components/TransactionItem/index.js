@@ -14,7 +14,7 @@ const CommentItem = props => {
       <div className="comment-container">
         <div>
           <p className="comment">{name}</p>
-          <p className="comment">{comment}</p>
+          <p className="comment">Rs {comment}</p>
           <p className="comment">{type}</p>
         </div>
       </div>
