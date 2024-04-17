@@ -17,7 +17,7 @@ const transactionTypeOptions = [
   },
 ]
 
-class Comments extends Component {
+class MoneyManager extends Component {
   state = {
     nameInput: '',
     amountInput: '',
@@ -137,32 +137,32 @@ class Comments extends Component {
             welcome back to your<span>Money Manager</span>
           </p>
           <div>
-            <ul>
-              <li>
+            <div>
+              <div>
                 <img
                   alt="balance"
                   src="https://assets.ccbp.in/frontend/react-js/money-manager/balance-image.png"
                 />
 
                 <p data-testid="balanceAmount">Your Balance RS {balance}</p>
-              </li>
-              <li>
+              </div>
+              <div>
                 <img
                   alt="income"
                   src="https://assets.ccbp.in/frontend/react-js/money-manager/income-image.png"
                 />
                 <p>Your Income</p>
                 <p data-testid="incomeAmount">RS {income}</p>
-              </li>
-              <li>
+              </div>
+              <div>
                 <img
                   alt="expenses"
                   src="https://assets.ccbp.in/frontend/react-js/money-manager/expenses-image.png"
                 />
                 <p>Your Expenses</p>
                 <p data-testid="expensesAmount">RS {expense}</p>
-              </li>
-            </ul>
+              </div>
+            </div>
           </div>
           <div className="comments-inputs">
             <form className="form" onSubmit={this.onAddComment}>
@@ -213,4 +213,4 @@ class Comments extends Component {
   }
 }
 
-export default Comments
+export default MoneyManager
